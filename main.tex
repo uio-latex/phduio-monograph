@@ -1,0 +1,71 @@
+\documentclass[colophon, english]{phduio}
+
+\usepackage{phdstyle}   % Custom style
+\usepackage{kantlipsum} % Dummy text
+
+\author{Author}
+\title{Working Title}
+\subtitle{Optional Subtitle}
+\department{Department}
+\faculty{Faculty}
+\affiliation
+{
+    Optional Second Affiliation
+    \and
+    Optional Further Specification
+}
+\ISSN{1234-5678}           % Request correct number from repro@uio.no
+\dissertationseries{1234}  % Request correct number from repro@uio.no
+
+
+\includeonly
+{
+    sections/dedication,
+    sections/abstract,
+    sections/preface,
+    sections/introduction,
+    sections/chapter2,
+    sections/chapter3,
+    sections/chapter4,
+    sections/appendixA,
+    sections/appendixB,
+}
+
+\begin{document}
+
+    \frontmatter        % Folios in Roman numerals, unnumbered chapters.
+
+    \uiotitle
+
+    \include{sections/dedication}
+    \include{sections/abstract}
+    \include{sections/preface}
+
+    \cleartorecto
+    \tableofcontents    % Or \tableofcontents*
+    \cleartorecto
+    \listoffigures      % Or \listoffigures*
+    \cleartorecto
+    \listoftables       % Or \listoftables*
+
+    \mainmatter         % Folios in Arabic numerals, numbered chapters.
+
+    \include{sections/introduction}
+
+    \part{The First Part}
+
+    \include{sections/chapter2}
+    \include{sections/chapter3}
+    \include{sections/chapter4}
+
+    \appendix           % "Chapter" is renamed "Appendix"
+    \appendixpage       % Similar to \part*{Appendices}, but appears in TOC
+
+    \include{sections/appendixA}
+    \include{sections/appendixB}
+
+    \backmatter         % Folios in Arabic numerals, unnumbered chapters.
+
+    \printbibliography
+
+\end{document}
