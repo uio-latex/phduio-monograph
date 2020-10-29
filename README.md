@@ -13,6 +13,8 @@ you work directly in the 17 x 24 cm format,
 so you do not have to worry about whether the font and figures will be legible after being shrunk for printing.
 * It defines a custom title page.
 
+![Example document](https://i.imgur.com/dGvvQkE.png)
+
 ## Contents
 * [Documentation](#documentation)
   * [Title page](#title-page)
