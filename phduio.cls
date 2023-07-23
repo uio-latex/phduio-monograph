@@ -553,8 +553,8 @@
 %% Specify production credits
 \newcommand{\cover}[1]{ \def \phduio@cover{#1} }
 \newcommand{\printinghouse}[1]{ \def \phduio@printinghouse{#1} }
-\cover{Hanne Baadsgaard Utigard}
-\printinghouse{Reprosentralen, University of Oslo}
+\cover{UiO}
+\printinghouse{Graphic center, University of Oslo}
 
 
 %% Print colophon
